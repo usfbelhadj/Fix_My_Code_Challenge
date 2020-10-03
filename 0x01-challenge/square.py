@@ -1,12 +1,15 @@
 #!/usr/bin/python3
+'''square Class'''
 
 
 class Square():
+    '''Class Square'''
 
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
+        '''Constructor'''
         for key, value in kwargs.items():
             setattr(self, key, value)
         if 'width' in kwargs.keys() and self.height != self.width:
